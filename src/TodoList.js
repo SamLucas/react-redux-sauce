@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { Creators as TodoActions } from "./store/ducks/todo";
+import { Creators as TodoActions } from "./store/ducks/todos";
 
 import "./styles.css";
 
