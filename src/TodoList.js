@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import * as TodoActions from "./store/actions/todos";
+import { Creators as TodoActions } from "./store/ducks/todo";
 
 import "./styles.css";
 
@@ -48,7 +48,4 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators(TodoActions, dispatch);
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TodoList);
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
